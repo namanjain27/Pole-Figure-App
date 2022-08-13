@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 void main() {
   runApp(appScreen());
@@ -14,12 +15,43 @@ class _appScreenState extends State<appScreen> {
 
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      
       home: Scaffold(
+        
         body: Column(
-          
-      )
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+
+            
+            Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: Container(
+                height: 300,
+                width: 400,
+                color: Colors.amberAccent,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: Container(
+                height: 280,
+                width: 400,
+                color: Colors.green,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: Container(
+                height: 200,
+                width: 400,
+                color: Colors.blue,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
